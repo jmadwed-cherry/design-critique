@@ -52,14 +52,14 @@ function Legend({ items }) {
 
 export default function UserData() {
   const providerSegments = [
-    { label: 'Windows', value: 59, color: '#c0392b' },
-    { label: 'Mac', value: 19, color: '#e74c3c' },
+    { label: 'Windows', value: 59, color: '#00A368' },
+    { label: 'Mac', value: 19, color: '#00C37D' },
     { label: 'Other', value: 22, color: '#e0e0e0' },
   ]
 
   const consumerSegments = [
-    { label: 'iPhone', value: 67, color: '#c0392b' },
-    { label: 'Android', value: 21, color: '#e74c3c' },
+    { label: 'iPhone', value: 67, color: '#00A368' },
+    { label: 'Android', value: 21, color: '#00C37D' },
     { label: 'Other', value: 12, color: '#e0e0e0' },
   ]
 

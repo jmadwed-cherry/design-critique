@@ -47,8 +47,8 @@ function LineChart() {
     <svg viewBox={`0 0 ${svgW} ${svgH}`} className="w-full h-auto">
       <defs>
         <linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="#c0392b" stopOpacity="0.12" />
-          <stop offset="100%" stopColor="#c0392b" stopOpacity="0.02" />
+          <stop offset="0%" stopColor="#00C37D" stopOpacity="0.12" />
+          <stop offset="100%" stopColor="#00C37D" stopOpacity="0.02" />
         </linearGradient>
       </defs>
 
@@ -79,7 +79,7 @@ function LineChart() {
       <path d={areaPath} fill="url(#chartFill)" />
 
       {/* Line */}
-      <path d={linePath} fill="none" stroke="#c0392b" strokeWidth="2" strokeLinejoin="round" strokeLinecap="round" />
+      <path d={linePath} fill="none" stroke="#00A368" strokeWidth="2" strokeLinejoin="round" strokeLinecap="round" />
 
       {/* X-axis labels */}
       {data.map((d, i) => {
