@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cherry: #c0392b;
+  --color-cherry-light: #e74c3c;
+  --color-cherry-dark: #96281b;
+  --color-cherry-50: #fdf2f1;
+  --color-cherry-100: #fbe5e3;
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
