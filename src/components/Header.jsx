@@ -9,14 +9,8 @@ const steps = [
 
 function Arrow() {
   return (
-    <svg
-      className="hidden sm:block w-6 h-6 shrink-0 text-gray-300"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-      strokeWidth={2}
-    >
-      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+    <svg className="hidden sm:block w-8 h-8 shrink-0 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
     </svg>
   )
 }
@@ -33,20 +27,14 @@ export default function Header() {
         </h1>
 
         {/* Funnel */}
-        <div className="mt-10 flex flex-wrap items-center gap-2 sm:gap-0">
+        <div className="mt-10 flex flex-wrap items-center gap-3 sm:gap-4">
           {steps.map((step, i) => (
-            <div key={step} className="flex items-center gap-2">
-              <span
-                className={`inline-flex items-center rounded-full border px-4 py-1.5 text-sm font-medium whitespace-nowrap ${
-                  i === 0
-                    ? 'border-cherry/30 bg-cherry-50 text-cherry'
-                    : i === steps.length - 1
-                      ? 'border-emerald-200 bg-emerald-50 text-emerald-700'
-                      : 'border-gray-200 bg-white text-gray-600'
-                }`}
-              >
-                {step}
-              </span>
+            <div key={step} className="flex items-center gap-3 sm:gap-4">
+              <div className="flex items-center rounded-lg border border-gray-200 bg-white px-5 py-3">
+                <span className="text-sm font-semibold whitespace-nowrap text-gray-600">
+                  {step}
+                </span>
+              </div>
               {i < steps.length - 1 && <Arrow />}
             </div>
           ))}
