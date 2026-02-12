@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { HashRouter, Routes, Route, Link } from 'react-router-dom'
 import AcquisitionFunnelAudit from './pages/AcquisitionFunnelAudit'
 import SherryCritiquePage from './pages/SherryCritiquePage'
 
@@ -65,7 +65,7 @@ function Index() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="min-h-screen bg-white font-sans text-gray-900 antialiased">
         <Nav />
         <Routes>
@@ -77,7 +77,7 @@ function App() {
           Design Critique Context &middot; Confidential
         </footer>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
