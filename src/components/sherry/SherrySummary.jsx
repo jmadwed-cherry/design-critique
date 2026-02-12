@@ -94,10 +94,10 @@ export default function SherrySummary() {
                 </p>
               </div>
               <h3 className="text-lg font-bold text-gray-900">
-                Emotional State During&nbsp;Flow
+                Offering Financing Without&nbsp;Cherry
               </h3>
               <p className="mt-1 text-sm text-gray-500">
-                How users describe their experience with the current registration&nbsp;flow
+                How providers feel about offering patient financing today &mdash; the mindset they bring when they land on our&nbsp;site
               </p>
 
               <div className="mt-5 flex justify-center">
@@ -123,8 +123,8 @@ export default function SherrySummary() {
 
               <div className="mt-5 rounded-lg bg-amber-100/60 px-4 py-3">
                 <p className="text-xs font-medium text-amber-800">
-                  55.5% of users find the current flow challenging or overwhelming.
-                  0% describe it as easy. This data is the primary driver for the Sherry&nbsp;revamp.
+                  55.5% of providers find offering financing challenging or overwhelming before they even reach us.
+                  0% say it&rsquo;s easy. This is the emotional state arriving at our&nbsp;site.
                 </p>
               </div>
             </div>
