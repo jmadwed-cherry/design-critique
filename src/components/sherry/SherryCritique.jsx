@@ -19,10 +19,7 @@ function CritiqueTable({ rows }) {
         <thead>
           <tr className="border-b border-gray-200">
             <th className="whitespace-nowrap px-4 py-3 text-xs font-semibold uppercase tracking-wide text-gray-400">Priority</th>
-            <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-gray-400">Finding</th>
-            <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-gray-400">Todo</th>
-            <th className="whitespace-nowrap px-4 py-3 text-xs font-semibold uppercase tracking-wide text-gray-400">Owner</th>
-            <th className="whitespace-nowrap px-4 py-3 text-xs font-semibold uppercase tracking-wide text-gray-400">Jira / Mock</th>
+            <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-gray-400">Problem</th>
           </tr>
         </thead>
         <tbody>
@@ -31,10 +28,7 @@ function CritiqueTable({ rows }) {
               <td className="px-4 py-3 align-top">
                 <PriorityBadge level={row.priority} />
               </td>
-              <td className="px-4 py-3 align-top text-gray-700">{row.finding}</td>
-              <td className="px-4 py-3 align-top text-gray-600">{row.todo}</td>
-              <td className="px-4 py-3 align-top whitespace-nowrap text-gray-500">{row.owner}</td>
-              <td className="px-4 py-3 align-top whitespace-nowrap text-gray-500">{row.jira}</td>
+              <td className="px-4 py-3 align-top text-gray-700">{row.problem}</td>
             </tr>
           ))}
         </tbody>
@@ -46,38 +40,23 @@ function CritiqueTable({ rows }) {
 const demoFormRows = [
   {
     priority: 'P0',
-    finding: 'Hero headline is generic \u2014 doesn\u2019t convey Cherry\u2019s specific value prop for providers',
-    todo: 'Rewrite headline to lead with provider benefit (e.g., "Offer patients flexible payments in minutes")',
-    owner: '\u2014',
-    jira: '\u2014',
+    problem: 'Hero headline is generic \u2014 doesn\u2019t convey Cherry\u2019s specific value prop for providers',
   },
   {
     priority: 'P0',
-    finding: '"Takes <1 minute" claim is buried below the fold',
-    todo: 'Surface time-to-complete as a badge directly on the demo CTA or form header',
-    owner: '\u2014',
-    jira: '\u2014',
+    problem: '\u201cTakes <1 minute\u201d claim is buried below the fold',
   },
   {
     priority: 'P1',
-    finding: 'Value props listed as a wall of text \u2014 not scannable',
-    todo: 'Convert to icon + short phrase format (max 6 words per prop)',
-    owner: '\u2014',
-    jira: '\u2014',
+    problem: 'Value props listed as a wall of text \u2014 not scannable',
   },
   {
     priority: 'P1',
-    finding: 'Form fields lack contextual reassurance (why do we need this?)',
-    todo: 'Add inline helper text or trust micro-copy under sensitive fields',
-    owner: '\u2014',
-    jira: '\u2014',
+    problem: 'Form fields lack contextual reassurance (why do we need this?)',
   },
   {
     priority: 'P2',
-    finding: 'No social proof visible near the form',
-    todo: 'Add a testimonial snippet or provider count near the CTA',
-    owner: '\u2014',
-    jira: '\u2014',
+    problem: 'No social proof visible near the form',
   },
 ]
 
@@ -89,10 +68,10 @@ export default function SherryCritique() {
           Critique Findings
         </p>
         <h2 className="text-xl font-bold tracking-tight text-gray-900 md:text-2xl">
-          Demo Form
+          Opportunities discovered
         </h2>
         <p className="mt-2 text-base text-gray-500">
-          Copy polish &amp; value prop placement
+          Surfaced during a live walkthrough of the demo booking flow with the&nbsp;team
         </p>
 
         <div className="mt-8 rounded-xl border border-gray-200 bg-white">

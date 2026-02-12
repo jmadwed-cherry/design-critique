@@ -9,7 +9,7 @@ export default function SherryRawNotes() {
           Live critique feedback
         </h2>
         <p className="mt-2 text-base text-gray-500">
-          Capture raw observations, questions, and follow-ups during the critique session.
+          Capture observations, questions, and follow-ups during the critique session.
         </p>
 
         <div className="mt-8 rounded-xl border border-dashed border-gray-300 bg-white p-8">
@@ -37,22 +37,22 @@ export default function SherryRawNotes() {
               <div className="grid gap-3 sm:grid-cols-2">
                 <div className="rounded-lg border border-gray-100 bg-gray-50/50 px-4 py-3">
                   <p className="text-sm text-gray-600">
-                    How far should auto-advance go? Single-choice only, or also after text input blur?
+                    What&rsquo;s the minimum number of pages we can reduce the flow to while still capturing what we need?
                   </p>
                 </div>
                 <div className="rounded-lg border border-gray-100 bg-gray-50/50 px-4 py-3">
                   <p className="text-sm text-gray-600">
-                    What is the right level of animation? Where does &ldquo;buttery&rdquo; cross into &ldquo;slow&rdquo;?
+                    How should the character guide the experience? Where does it show up, and what role does it play in building excitement?
                   </p>
                 </div>
                 <div className="rounded-lg border border-gray-100 bg-gray-50/50 px-4 py-3">
                   <p className="text-sm text-gray-600">
-                    Should consent rewrite be validated with legal before design ships?
+                    Where is the biggest single drop-off in the current 8-page flow? What&rsquo;s causing it?
                   </p>
                 </div>
                 <div className="rounded-lg border border-gray-100 bg-gray-50/50 px-4 py-3">
                   <p className="text-sm text-gray-600">
-                    What psych score target would represent success? Shift &ldquo;Overwhelming&rdquo; below 10%?
+                    What does a &ldquo;100% psych score&rdquo; moment feel like? What would make a provider genuinely excited to book?
                   </p>
                 </div>
               </div>

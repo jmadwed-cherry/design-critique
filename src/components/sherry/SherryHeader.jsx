@@ -29,16 +29,19 @@ export default function SherryHeader() {
           </h1>
 
           <div className="mt-10 flex flex-wrap items-center gap-3 sm:gap-4">
-            {steps.map((step, i) => (
+            {steps.map((step, i) => {
+              const isActive = step === 'Book a demo'
+              return (
               <div key={step} className="flex items-center gap-3 sm:gap-4">
-                <div className="flex items-center rounded-lg border border-gray-200 bg-white px-5 py-3">
-                  <span className="text-sm font-semibold whitespace-nowrap text-gray-600">
+                <div className={`flex items-center rounded-lg px-5 py-3 ${isActive ? 'border-2 border-cherry bg-cherry-50' : 'border border-gray-200 bg-white'}`}>
+                  <span className={`text-sm font-semibold whitespace-nowrap ${isActive ? 'text-cherry' : 'text-gray-600'}`}>
                     {step}
                   </span>
                 </div>
                 {i < steps.length - 1 && <Arrow />}
               </div>
-            ))}
+              )
+            })}
           </div>
         </div>
       </section>
@@ -50,8 +53,12 @@ export default function SherryHeader() {
             Current Focus
           </p>
           <h2 className="text-xl font-bold tracking-tight text-gray-900 md:text-2xl">
-            Today&rsquo;s focus: Book a Demo Flow&nbsp;Conversion
+            Today&rsquo;s focus: Get demo booking conversion as close to 100%&nbsp;as&nbsp;possible
           </h2>
+          <p className="mt-3 text-base text-gray-500">
+            The demo booking flow is the first real interaction providers have with Cherry.
+            Every drop-off here is a provider we never get the chance to&nbsp;win.
+          </p>
 
           {/* Stats callout */}
           <div className="mt-8 flex items-center gap-5 rounded-xl border border-gray-200 bg-white px-6 py-5">
@@ -65,34 +72,8 @@ export default function SherryHeader() {
               <span className="text-sm text-gray-500">conversion rate</span>
             </div>
             <p className="ml-auto text-sm text-gray-500 max-w-xs">
-              Our current demo booking flow is 8 pages with a 43% conversion&nbsp;rate.
+              Current state: 8 pages, 43% conversion. 57% of interested providers drop off before booking&nbsp;a&nbsp;demo.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Project header */}
-      <section className="border-y border-gray-100 bg-gray-50/60 px-6 py-16 md:py-20">
-        <div className="mx-auto max-w-5xl">
-          <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-cherry">
-            Design Critique
-          </p>
-          <h2 className="text-2xl font-bold leading-tight tracking-tight text-gray-900 md:text-3xl">
-            &ldquo;Sherry&rdquo; Revamp &mdash; Demo&nbsp;Form
-          </h2>
-          <p className="mt-4 text-lg text-gray-500 max-w-3xl">
-            A &ldquo;Duolingo-style&rdquo; buttery smooth experience with polished copy, clearer value
-            props, and trust-building messaging to increase demo booking conversion&nbsp;rates.
-          </p>
-
-          {/* Scope pill */}
-          <div className="mt-8 flex flex-wrap items-center gap-3">
-            <div className="flex items-center gap-2 rounded-lg border border-cherry/20 bg-cherry-50 px-4 py-2.5">
-              <svg className="h-4 w-4 text-cherry" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-              </svg>
-              <span className="text-sm font-semibold text-cherry">Demo Form</span>
-            </div>
           </div>
         </div>
       </section>

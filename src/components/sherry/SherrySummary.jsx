@@ -60,24 +60,14 @@ export default function SherrySummary() {
 
         <div className="mt-6 grid gap-6 lg:grid-cols-5">
           {/* Left: text summary */}
-          <div className="lg:col-span-3 space-y-4">
-            <blockquote className="rounded-lg border-l-4 border-cherry bg-white p-6 shadow-sm">
-              <p className="text-base leading-relaxed text-gray-600">
-                The <span className="font-semibold text-gray-900">&ldquo;Sherry&rdquo;</span> revamp
-                targets a buttery smooth, animated experience inspired by Duolingo&rsquo;s onboarding.
-                The goal is polished copy, unmissable value props, and specific trust signals
-                (e.g., <span className="font-medium text-gray-900">&ldquo;Takes &lt;1 minute&rdquo;</span>)
-                to reduce drop-off and improve the perceived quality of the&nbsp;flow.
-              </p>
-            </blockquote>
-
+          <div className="lg:col-span-3">
             <div className="rounded-xl border border-gray-200 bg-white p-6">
-              <h3 className="text-sm font-semibold text-gray-900">Hypothesis</h3>
-              <p className="mt-2 text-sm leading-relaxed text-gray-600">
-                Polished interactions, clearer value propositions, and softer consent language will
-                reduce drop-off across the demo booking and registration funnel &mdash; improving the
-                overall <span className="font-medium text-gray-900">&ldquo;psych score&rdquo;</span> of
-                the experience.
+              <h3 className="text-sm font-semibold uppercase tracking-wide text-gray-400">Hypothesis</h3>
+              <p className="mt-3 text-lg leading-relaxed text-gray-700">
+                We can dramatically increase demo booking conversion by creating an experience that
+                raises the <span className="font-semibold text-gray-900">&ldquo;psych score&rdquo;</span> at
+                every step &mdash; beautiful design, purposeful animation, a guided character, language
+                that resonates with providers, and as few friction points as&nbsp;possible.
               </p>
             </div>
           </div>
@@ -123,8 +113,8 @@ export default function SherrySummary() {
 
               <div className="mt-5 rounded-lg bg-amber-100/60 px-4 py-3">
                 <p className="text-xs font-medium text-amber-800">
-                  55.5% of providers find offering financing challenging or overwhelming before they even reach us.
-                  0% say it&rsquo;s easy. This is the emotional state arriving at our&nbsp;site.
+                  55.5% of providers already feel stressed about financing before they even reach us.
+                  0% say it&rsquo;s easy. If we meet them with a flow that feels effortless and exciting, conversion&nbsp;follows.
                 </p>
               </div>
             </div>
