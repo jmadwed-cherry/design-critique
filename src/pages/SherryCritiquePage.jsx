@@ -8,8 +8,8 @@ export default function SherryCritiquePage() {
   return (
     <>
       <SherryHeader />
-      <SherrySummary />
       <SherryKeyThemes />
+      <SherrySummary />
       <SherryCritique />
       <SherryRawNotes />
     </>
