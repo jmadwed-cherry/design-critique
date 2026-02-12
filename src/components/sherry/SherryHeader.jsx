@@ -2,6 +2,21 @@ export default function SherryHeader() {
   return (
     <section className="border-b border-gray-100 bg-gray-50/60 px-6 py-16 md:py-20">
       <div className="mx-auto max-w-5xl">
+        <div className="mb-8 flex items-center gap-5 rounded-xl border border-gray-200 bg-white px-6 py-5">
+          <div className="flex items-baseline gap-2">
+            <span className="text-3xl font-bold text-gray-900">8</span>
+            <span className="text-sm text-gray-500">pages</span>
+          </div>
+          <div className="h-8 w-px bg-gray-200" />
+          <div className="flex items-baseline gap-2">
+            <span className="text-3xl font-bold text-gray-900">43%</span>
+            <span className="text-sm text-gray-500">conversion rate</span>
+          </div>
+          <p className="ml-auto text-sm text-gray-500 max-w-xs">
+            Our current demo booking flow is 8 pages with a 43% conversion&nbsp;rate.
+          </p>
+        </div>
+
         <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-cherry">
           Design Critique
         </p>
