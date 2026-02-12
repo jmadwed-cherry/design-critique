@@ -53,18 +53,6 @@ export default function SherryHeader() {
             Today&rsquo;s focus: Book a Demo Flow&nbsp;Conversion
           </h2>
 
-          <div className="mt-8 flex items-center gap-4">
-            <div className="flex items-center gap-3 rounded-lg border border-cherry/20 bg-cherry-50 px-5 py-3">
-              <span className="text-sm font-semibold text-cherry">Website visit</span>
-            </div>
-            <svg className="w-8 h-8 text-cherry" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-            <div className="flex items-center gap-3 rounded-lg border border-cherry/20 bg-cherry-50 px-5 py-3">
-              <span className="text-sm font-semibold text-cherry">Book a demo</span>
-            </div>
-          </div>
-
           {/* Stats callout */}
           <div className="mt-8 flex items-center gap-5 rounded-xl border border-gray-200 bg-white px-6 py-5">
             <div className="flex items-baseline gap-2">

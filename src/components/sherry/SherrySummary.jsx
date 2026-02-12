@@ -80,20 +80,6 @@ export default function SherrySummary() {
                 the experience.
               </p>
             </div>
-
-            <div className="rounded-xl border border-gray-200 bg-white p-6">
-              <h3 className="text-sm font-semibold text-gray-900">Scope</h3>
-              <ul className="mt-2 space-y-2 text-sm text-gray-600">
-                <li className="flex items-start gap-2">
-                  <span className="mt-1 inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-cherry" />
-                  <span><span className="font-medium text-gray-900">Demo Form:</span> Polished copy, clear value props, trust messaging</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="mt-1 inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-cherry" />
-                  <span><span className="font-medium text-gray-900">Registration Flow:</span> Shorter copy, softer consent language, auto-advance interactions</span>
-                </li>
-              </ul>
-            </div>
           </div>
 
           {/* Right: emotional state data */}
