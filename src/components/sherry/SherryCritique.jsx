@@ -81,44 +81,6 @@ const demoFormRows = [
   },
 ]
 
-const registrationRows = [
-  {
-    priority: 'P0',
-    finding: 'Consent language feels legal and intimidating \u2014 users hesitate',
-    todo: 'Rewrite consent to collaborative tone (e.g., "Keep me in the loop" vs "I agree to receive...")',
-    owner: '\u2014',
-    jira: '\u2014',
-  },
-  {
-    priority: 'P0',
-    finding: 'Multi-step form lacks progress indication \u2014 users don\u2019t know how long it will take',
-    todo: 'Add clear step indicator with "Step X of Y" and estimated time remaining',
-    owner: '\u2014',
-    jira: '\u2014',
-  },
-  {
-    priority: 'P1',
-    finding: 'Manual "Next" button clicks between steps feel sluggish',
-    todo: 'Implement auto-advance on single-choice selections (Duolingo pattern)',
-    owner: '\u2014',
-    jira: '\u2014',
-  },
-  {
-    priority: 'P1',
-    finding: 'Copy on each step is too verbose \u2014 increases cognitive load',
-    todo: 'Cut copy to max 1 line of instruction per step; move details to tooltips',
-    owner: '\u2014',
-    jira: '\u2014',
-  },
-  {
-    priority: 'P2',
-    finding: 'No celebration or feedback on completion',
-    todo: 'Add a success animation + clear next-step messaging on final screen',
-    owner: '\u2014',
-    jira: '\u2014',
-  },
-]
-
 export default function SherryCritique() {
   return (
     <section className="px-6 py-16 md:py-20">
@@ -127,43 +89,14 @@ export default function SherryCritique() {
           Critique Findings
         </p>
         <h2 className="text-xl font-bold tracking-tight text-gray-900 md:text-2xl">
-          Structured feedback by&nbsp;surface
+          Demo Form
         </h2>
+        <p className="mt-2 text-base text-gray-500">
+          Copy polish &amp; value prop placement
+        </p>
 
-        {/* Demo Form */}
-        <div className="mt-10">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-cherry-50 text-cherry">
-              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-              </svg>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold text-gray-900">Demo Form</h3>
-              <p className="text-sm text-gray-500">Copy polish &amp; value prop placement</p>
-            </div>
-          </div>
-          <div className="rounded-xl border border-gray-200 bg-white">
-            <CritiqueTable rows={demoFormRows} />
-          </div>
-        </div>
-
-        {/* Registration Flow */}
-        <div className="mt-12">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-cherry-50 text-cherry">
-              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-              </svg>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold text-gray-900">Registration Flow</h3>
-              <p className="text-sm text-gray-500">Consent language &amp; auto-advance interactions</p>
-            </div>
-          </div>
-          <div className="rounded-xl border border-gray-200 bg-white">
-            <CritiqueTable rows={registrationRows} />
-          </div>
+        <div className="mt-8 rounded-xl border border-gray-200 bg-white">
+          <CritiqueTable rows={demoFormRows} />
         </div>
       </div>
     </section>
